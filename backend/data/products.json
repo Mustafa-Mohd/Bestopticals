@@ -1,0 +1,513 @@
+[
+  {
+    "id": "EG-TEST",
+    "name": "Custom 3D Test Glasses",
+    "brand": "Custom",
+    "category": "eyeglasses",
+    "subcategory": "full-rim",
+    "frameShape": "hexagon",
+    "frameMaterial": "metal",
+    "price": 0,
+    "originalPrice": 0,
+    "discount": 0,
+    "colors": [
+      "black"
+    ],
+    "images": [
+      "/test-glasses.png"
+    ],
+    "rating": 5,
+    "reviews": 1,
+    "gender": "unisex",
+    "isPolarized": false,
+    "isBlueLight": true,
+    "isBestSeller": false,
+    "lensOptions": [
+      "single vision"
+    ],
+    "weight": "Light",
+    "warranty": "N/A",
+    "description": "Your custom test image.",
+    "features": [
+      "3D Try-On Enabled"
+    ]
+  },
+  {
+    "id": "EG101",
+    "name": "Vincent Chase Midnight Ace",
+    "brand": "Vincent Chase",
+    "category": "eyeglasses",
+    "subcategory": "full-rim",
+    "frameShape": "rectangle",
+    "frameMaterial": "acetate",
+    "price": 2800,
+    "originalPrice": "5600",
+    "discount": "50",
+    "colors": "black,grey",
+    "images": "/uploads/midnight_ace_glasses.png",
+    "rating": "4.9",
+    "reviews": "125",
+    "gender": "unisex",
+    "isPolarized": false,
+    "isBlueLight": true,
+    "isBestSeller": true,
+    "lensOptions": "single vision,progressive",
+    "weight": "Light",
+    "warranty": "1 Year",
+    "description": "Midnight Ace is a modern take on the classic rectangle frame. Lightweight and durable.",
+    "features": "3D Try-On Enabled,Premium Acetate,Anti-Scratch Coating",
+    "image": "/uploads/midnight_ace_glasses.png"
+  },
+  {
+    "id": "EG102",
+    "name": "John Jacobs Gold Aura",
+    "brand": "John Jacobs",
+    "category": "eyeglasses",
+    "subcategory": "full-rim",
+    "frameShape": "round",
+    "frameMaterial": "titanium",
+    "price": 3200,
+    "originalPrice": "6400",
+    "discount": "50",
+    "colors": "gold,rose gold",
+    "images": "/uploads/blue spects.webp",
+    "rating": "4.8",
+    "reviews": "89",
+    "gender": "women",
+    "isPolarized": false,
+    "isBlueLight": true,
+    "isBestSeller": false,
+    "lensOptions": "single vision,progressive",
+    "weight": "Ultra-Light",
+    "warranty": "1 Year",
+    "description": "Aura Gold features ultra-light titanium frames that provide effortless sophistication.",
+    "features": "3D Try-On Enabled,Titanium Frame,UV Protection",
+    "image": "/uploads/blue spects.webp"
+  },
+  {
+    "id": "EG001",
+    "name": "Vincent Chase VC E13023",
+    "brand": "Vincent Chase",
+    "category": "eyeglasses",
+    "subcategory": "full-rim",
+    "frameShape": "rectangle",
+    "frameMaterial": "metal",
+    "price": 1500,
+    "originalPrice": 3000,
+    "discount": 50,
+    "colors": [
+      "black",
+      "gold",
+      "silver"
+    ],
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lime-full-rim-rectangle/lime-full-rim-rectangle-eyeframe-vc-e13023-c2-eyeglasses_g_1034_7_12_2022.jpg"
+    ],
+    "rating": 4.2,
+    "reviews": 1820,
+    "gender": "unisex",
+    "isPolarized": false,
+    "isBlueLight": true,
+    "isBestSeller": true,
+    "lensOptions": [
+      "single vision",
+      "progressive",
+      "bifocal"
+    ],
+    "weight": "Light",
+    "warranty": "1 Year",
+    "description": "A sleek, minimal rectangle frame with a premium metal finish. Ideal for office and everyday wear.",
+    "features": [
+      "Lightweight",
+      "Durable",
+      "Anti-Glare coating available"
+    ]
+  },
+  {
+    "id": "EG002",
+    "name": "John Jacobs JJ E16260",
+    "brand": "John Jacobs",
+    "category": "eyeglasses",
+    "subcategory": "full-rim",
+    "frameShape": "round",
+    "frameMaterial": "acetate",
+    "price": 2500,
+    "originalPrice": 5000,
+    "discount": 50,
+    "colors": [
+      "tortoise",
+      "black",
+      "blue"
+    ],
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e16260-c1-eyeglasses_g_9501_03_2023.jpg"
+    ],
+    "rating": 4.5,
+    "reviews": 3410,
+    "gender": "unisex",
+    "isPolarized": false,
+    "isBlueLight": true,
+    "isBestSeller": true,
+    "lensOptions": [
+      "single vision",
+      "progressive"
+    ],
+    "weight": "Medium",
+    "warranty": "1 Year",
+    "description": "Classic round acetate frames with a vintage appeal. Perfect for a fashion-forward look.",
+    "features": [
+      "Premium Acetate",
+      "Spring Hinge",
+      "UV Protection"
+    ]
+  },
+  {
+    "id": "EG003",
+    "name": "Lenskart Air LA E16503",
+    "brand": "Lenskart Air",
+    "category": "eyeglasses",
+    "subcategory": "rimless",
+    "frameShape": "rectangle",
+    "frameMaterial": "titanium",
+    "price": 2000,
+    "originalPrice": 4500,
+    "discount": 55,
+    "colors": [
+      "rose gold",
+      "silver",
+      "gunmetal"
+    ],
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-air-la-e14736-c4-eyeglasses_g_2211_06_2022.jpg"
+    ],
+    "rating": 4.3,
+    "reviews": 2150,
+    "gender": "women",
+    "isPolarized": false,
+    "isBlueLight": true,
+    "isBestSeller": false,
+    "lensOptions": [
+      "single vision",
+      "progressive",
+      "bifocal"
+    ],
+    "weight": "Ultra-Light",
+    "warranty": "1 Year",
+    "description": "Feather-light rimless titanium frames — barely there, absolutely stylish.",
+    "features": [
+      "Rimless Design",
+      "Titanium",
+      "Flexible Hinges"
+    ]
+  },
+  {
+    "id": "EG004",
+    "name": "Hooper HE3045",
+    "brand": "Hooper",
+    "category": "eyeglasses",
+    "subcategory": "half-rim",
+    "frameShape": "wayfarer",
+    "frameMaterial": "plastic",
+    "price": 800,
+    "originalPrice": 1600,
+    "discount": 50,
+    "colors": [
+      "black",
+      "brown",
+      "blue"
+    ],
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//h/o/hooper-he3045-c1-eyeglasses_g_8011_06_2022.jpg"
+    ],
+    "rating": 4,
+    "reviews": 980,
+    "gender": "men",
+    "isPolarized": false,
+    "isBlueLight": false,
+    "isBestSeller": false,
+    "lensOptions": [
+      "single vision"
+    ],
+    "weight": "Medium",
+    "warranty": "6 Months",
+    "description": "Bold wayfarer style at an unbeatable price. A wardrobe staple.",
+    "features": [
+      "Budget-friendly",
+      "Durable Plastic",
+      "Bold Design"
+    ]
+  },
+  {
+    "id": "SG001",
+    "name": "Vincent Chase Polarized VC S11779",
+    "brand": "Vincent Chase",
+    "category": "sunglasses",
+    "subcategory": "full-rim",
+    "frameShape": "aviator",
+    "frameMaterial": "metal",
+    "price": 1200,
+    "originalPrice": 2500,
+    "discount": 52,
+    "colors": [
+      "gold-brown",
+      "silver-grey",
+      "black-green"
+    ],
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-polarized-vc-s11779-c2-sunglasses_g_1284_4_10_2022.jpg"
+    ],
+    "rating": 4.4,
+    "reviews": 4120,
+    "gender": "unisex",
+    "isPolarized": true,
+    "isBlueLight": false,
+    "isBestSeller": true,
+    "lensOptions": [
+      "polarized"
+    ],
+    "weight": "Light",
+    "warranty": "1 Year",
+    "description": "Classic aviator sunglasses with polarized lenses for superior glare reduction.",
+    "features": [
+      "100% UV Protection",
+      "Polarized Lenses",
+      "Metal Frame"
+    ]
+  },
+  {
+    "id": "SG002",
+    "name": "John Jacobs JJ S12871",
+    "brand": "John Jacobs",
+    "category": "sunglasses",
+    "subcategory": "full-rim",
+    "frameShape": "wayfarer",
+    "frameMaterial": "acetate",
+    "price": 3500,
+    "originalPrice": 7000,
+    "discount": 50,
+    "colors": [
+      "tortoise",
+      "black",
+      "blue-havana"
+    ],
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-s12871-c1-sunglasses_g_2444_05_2022.jpg"
+    ],
+    "rating": 4.6,
+    "reviews": 5230,
+    "gender": "unisex",
+    "isPolarized": true,
+    "isBlueLight": false,
+    "isBestSeller": true,
+    "lensOptions": [
+      "polarized",
+      "tinted"
+    ],
+    "weight": "Medium",
+    "warranty": "1 Year",
+    "description": "Premium acetate wayfarer sunglasses from John Jacobs — a timeless classic.",
+    "features": [
+      "Premium Acetate",
+      "Polarized Available",
+      "UV400"
+    ]
+  },
+  {
+    "id": "SG003",
+    "name": "Lenskart Hustlr LS S13299",
+    "brand": "Lenskart Hustlr",
+    "category": "sunglasses",
+    "subcategory": "full-rim",
+    "frameShape": "sport",
+    "frameMaterial": "tr90",
+    "price": 1800,
+    "originalPrice": 3600,
+    "discount": 50,
+    "colors": [
+      "matte-black",
+      "red",
+      "blue"
+    ],
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-hustlr-ls-s13299-c1-sunglasses_g_4019_01_2023.jpg"
+    ],
+    "rating": 4.1,
+    "reviews": 1820,
+    "gender": "men",
+    "isPolarized": true,
+    "isBlueLight": false,
+    "isBestSeller": false,
+    "lensOptions": [
+      "polarized",
+      "mirrored"
+    ],
+    "weight": "Ultra-Light",
+    "warranty": "1 Year",
+    "description": "High-performance sport sunglasses for outdoor activities and adventures.",
+    "features": [
+      "TR90 Frame",
+      "Wraparound Design",
+      "Sport Grip Nose Pads"
+    ]
+  },
+  {
+    "id": "SG004",
+    "name": "Hooper HS2891 Cat Eye",
+    "brand": "Hooper",
+    "category": "sunglasses",
+    "subcategory": "full-rim",
+    "frameShape": "cat-eye",
+    "frameMaterial": "acetate",
+    "price": 999,
+    "originalPrice": 2000,
+    "discount": 50,
+    "colors": [
+      "black",
+      "tortoise",
+      "pink"
+    ],
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//h/o/hooper-hs2891-c1-sunglasses_g_7301_05_2022.jpg"
+    ],
+    "rating": 3.9,
+    "reviews": 760,
+    "gender": "women",
+    "isPolarized": false,
+    "isBlueLight": false,
+    "isBestSeller": false,
+    "lensOptions": [
+      "tinted"
+    ],
+    "weight": "Medium",
+    "warranty": "6 Months",
+    "description": "Chic cat-eye frames that add a touch of glamour to any outfit.",
+    "features": [
+      "Trendy Design",
+      "UV Protection",
+      "Acetate"
+    ]
+  },
+  {
+    "id": "CL001",
+    "name": "Acuvue Oasys 1-Day",
+    "brand": "Acuvue",
+    "category": "contact-lenses",
+    "subcategory": "daily",
+    "price": 1200,
+    "originalPrice": 1500,
+    "discount": 20,
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//c/l/cl-contact_lens_11_26_2019.jpg"
+    ],
+    "rating": 4.7,
+    "reviews": 8920,
+    "gender": "unisex",
+    "isPolarized": false,
+    "isBlueLight": false,
+    "isBestSeller": true,
+    "type": "daily",
+    "quantity": "30 lenses",
+    "wearTime": "Daily Disposable",
+    "uvProtection": true,
+    "description": "Experience superior comfort with HydraLuxe technology. Ideal for all-day wear.",
+    "features": [
+      "HydraLuxe Technology",
+      "UV Blocking",
+      "Silicone Hydrogel"
+    ]
+  },
+  {
+    "id": "CL002",
+    "name": "Bausch & Lomb Ultra Monthly",
+    "brand": "Bausch & Lomb",
+    "category": "contact-lenses",
+    "subcategory": "monthly",
+    "price": 800,
+    "originalPrice": 1000,
+    "discount": 20,
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//c/l/cl-contact_lens_11_26_2019.jpg"
+    ],
+    "rating": 4.5,
+    "reviews": 5430,
+    "gender": "unisex",
+    "isPolarized": false,
+    "isBlueLight": false,
+    "isBestSeller": true,
+    "type": "monthly",
+    "quantity": "6 lenses",
+    "wearTime": "Monthly Disposable",
+    "uvProtection": true,
+    "description": "MoistureSeal technology keeps lenses moist for up to 16 hours.",
+    "features": [
+      "MoistureSeal Technology",
+      "UV Blocking",
+      "Silicone Hydrogel"
+    ]
+  },
+  {
+    "id": "CL003",
+    "name": "Air Optix Colors",
+    "brand": "Alcon",
+    "category": "contact-lenses",
+    "subcategory": "colored",
+    "price": 1500,
+    "originalPrice": 2000,
+    "discount": 25,
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//c/l/cl-contact_lens_11_26_2019.jpg"
+    ],
+    "rating": 4.3,
+    "reviews": 3210,
+    "gender": "unisex",
+    "isPolarized": false,
+    "isBlueLight": false,
+    "isBestSeller": false,
+    "type": "monthly",
+    "quantity": "2 lenses",
+    "wearTime": "Monthly Disposable",
+    "uvProtection": false,
+    "colors": [
+      "blue",
+      "green",
+      "brown",
+      "grey",
+      "hazel"
+    ],
+    "description": "Transform your eye color with Air Optix Colors. Natural-looking, breathable lenses.",
+    "features": [
+      "Color Enhancement",
+      "Breathable Material",
+      "Comfortable Wear"
+    ]
+  },
+  {
+    "id": "CL004",
+    "name": "Biotrue ONEday",
+    "brand": "Bausch & Lomb",
+    "category": "contact-lenses",
+    "subcategory": "daily",
+    "price": 950,
+    "originalPrice": 1200,
+    "discount": 21,
+    "images": [
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//c/l/cl-contact_lens_11_26_2019.jpg"
+    ],
+    "rating": 4.4,
+    "reviews": 2870,
+    "gender": "unisex",
+    "isPolarized": false,
+    "isBlueLight": false,
+    "isBestSeller": false,
+    "type": "daily",
+    "quantity": "30 lenses",
+    "wearTime": "Daily Disposable",
+    "uvProtection": false,
+    "description": "Inspired by the biology of your eye for exceptional comfort throughout the day.",
+    "features": [
+      "Bio-inspired Material",
+      "98% Water Content",
+      "Retain Moisture"
+    ]
+  }
+]

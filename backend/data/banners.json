@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "title": "EYEGLASSES",
+        "subtitle": "FOR EVERY STYLE",
+        "description": "Discover our premium range of Italian-designed frames with UV400 protection.",
+        "tag": "New Collection 2024",
+        "image": "https://static1.lenskart.com/media/desktop/img/Dec22/1-Dec/Homepage-Banner165-Desktop.jpg",
+        "link": "eyeglasses"
+    },
+    {
+        "id": "2",
+        "title": "SUNGLASSES",
+        "subtitle": "SUMMER ESSENTIALS",
+        "description": "Protect your eyes in style with our latest high-fashion sunglasses collection.",
+        "tag": "Trending Now",
+        "image": "https://static1.lenskart.com/media/desktop/img/April24/Banner_Eyeglasses_Desktop.jpg",
+        "link": "sunglasses"
+    }
+]
