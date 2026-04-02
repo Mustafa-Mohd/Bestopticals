@@ -11,6 +11,7 @@ import CartDrawer from './components/CartDrawer';
 import AuthModal from './components/AuthModal';
 import Toast from './components/Toast';
 import VirtualTryOn from './components/VirtualTryOn';
+import SnapchatFilterTryOn from './components/SnapchatFilterTryOn';
 
 function App() {
     const [cart, setCart] = useState(JSON.parse(localStorage.getItem('lk_cart')) || []);
@@ -18,6 +19,7 @@ function App() {
     const [isCartOpen, setIsCartOpen] = useState(false);
     const [isAuthOpen, setIsAuthOpen] = useState(false);
     const [tryOnProduct, setTryOnProduct] = useState(null);
+    const [snapchatProduct, setSnapchatProduct] = useState(null);
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('lk_user')) || null);
     const [toasts, setToasts] = useState([]);
 
@@ -25,8 +27,15 @@ function App() {
         const handleOpenTryOn = (e) => {
             setTryOnProduct(e.detail);
         };
+        const handleOpenSnapchat = (e) => {
+            setSnapchatProduct(e.detail);
+        };
         window.addEventListener('open-try-on', handleOpenTryOn);
-        return () => window.removeEventListener('open-try-on', handleOpenTryOn);
+        window.addEventListener('open-snapchat-filter', handleOpenSnapchat);
+        return () => {
+            window.removeEventListener('open-try-on', handleOpenTryOn);
+            window.removeEventListener('open-snapchat-filter', handleOpenSnapchat);
+        };
     }, []);
 
     useEffect(() => {
@@ -126,6 +135,13 @@ function App() {
                 <VirtualTryOn
                     product={tryOnProduct}
                     onClose={() => setTryOnProduct(null)}
+                />
+            )}
+
+            {snapchatProduct && (
+                <SnapchatFilterTryOn
+                    product={snapchatProduct}
+                    onClose={() => setSnapchatProduct(null)}
                 />
             )}
 

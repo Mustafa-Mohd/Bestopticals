@@ -34,7 +34,7 @@ router.post('/register', async (req, res) => {
             password: hashedPassword,
             avatar: `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=00BAC7&color=fff`,
             address: [],
-            lenskartGold: false,
+            spectsmartGold: false,
             createdAt: new Date().toISOString()
         };
 
@@ -52,7 +52,7 @@ router.post('/register', async (req, res) => {
                 email: newUser.email,
                 phone: newUser.phone,
                 avatar: newUser.avatar,
-                lenskartGold: newUser.lenskartGold
+                spectsmartGold: newUser.spectsmartGold
             }
         });
     } catch (error) {
@@ -91,7 +91,7 @@ router.post('/login', async (req, res) => {
                 email: user.email,
                 phone: user.phone,
                 avatar: user.avatar,
-                lenskartGold: user.lenskartGold
+                spectsmartGold: user.spectsmartGold
             }
         });
     } catch (error) {
@@ -118,7 +118,7 @@ router.get('/me', (req, res) => {
                 phone: user.phone,
                 avatar: user.avatar,
                 address: user.address,
-                lenskartGold: user.lenskartGold,
+                spectsmartGold: user.spectsmartGold,
                 createdAt: user.createdAt
             }
         });
@@ -153,7 +153,7 @@ router.put('/profile', (req, res) => {
                 phone: users[userIndex].phone,
                 avatar: users[userIndex].avatar,
                 address: users[userIndex].address,
-                lenskartGold: users[userIndex].lenskartGold
+                spectsmartGold: users[userIndex].spectsmartGold
             }
         });
     } catch (error) {

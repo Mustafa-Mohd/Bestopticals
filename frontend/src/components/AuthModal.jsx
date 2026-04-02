@@ -37,7 +37,7 @@ const AuthModal = ({ isOpen, onClose, onLogin }) => {
                                 <path d="M25 50 H75 M25 50 C25 38 35 32 50 32 C65 32 75 38 75 50" strokeWidth="7" strokeLinecap="round" />
                             </svg>
                         </div>
-                        <span className="font-black text-xl tracking-tight">BEST VISION</span>
+                        <span className="font-black text-xl tracking-tight">SPECTSMART</span>
                     </div>
                     <h2 className="text-2xl font-black mt-4">{isLogin ? 'Welcome back!' : 'Create Account'}</h2>
                     <p className="text-blue-200 text-sm mt-1">
@@ -151,7 +151,7 @@ const AuthModal = ({ isOpen, onClose, onLogin }) => {
                     </div>
 
                     <p className="text-center text-xs text-gray-500 pt-1">
-                        By continuing, you agree to Best Vision Opticals'{' '}
+                        By continuing, you agree to SpectsMart'{' '}
                         <button type="button" className="text-teal font-semibold hover:underline">Terms of Service</button>
                         {' & '}
                         <button type="button" className="text-teal font-semibold hover:underline">Privacy Policy</button>

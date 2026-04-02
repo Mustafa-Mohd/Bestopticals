@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import {
@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 
-// Hardcoded hero slides for a rich Lenskart-style experience
+// Hardcoded hero slides for a rich SpectsMart-style experience
 const HERO_SLIDES = [
     {
         id: 1,
@@ -18,7 +18,7 @@ const HERO_SLIDES = [
         description: 'Explore 5000+ styles from top brands. Free home try-on available.',
         cta: 'Shop Eyeglasses',
         bg: 'from-[#000042] via-[#000066] to-[#0a0a80]',
-        image: 'https://static.lenskart.com/media/desktop/img/Jun23/Homepage-Banner/Vault-Banner-Desktop.jpg',
+        image: 'https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=2070&auto=format&fit=crop',
         badge: 'NEW ARRIVALS',
         color: 'text-blue-300',
     },
@@ -30,7 +30,7 @@ const HERO_SLIDES = [
         description: 'Protect your eyes in style. Top brands: Ray-Ban, Oakley, Maui Jim & more.',
         cta: 'Shop Sunglasses',
         bg: 'from-[#1a1a2e] via-[#16213e] to-[#0f3460]',
-        image: 'https://static.lenskart.com/media/desktop/img/Sep23/Sunglass-Dropdown/Ray-Ban-Dropdown.jpg',
+        image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=2080&auto=format&fit=crop',
         badge: 'BESTSELLERS',
         color: 'text-orange-300',
     },
@@ -42,7 +42,7 @@ const HERO_SLIDES = [
         description: 'Monthly & daily disposables from Bausch & Lomb, Acuvue, Air Optix.',
         cta: 'Shop Lenses',
         bg: 'from-[#003333] via-[#004d4d] to-[#006666]',
-        image: 'https://static.lenskart.com/media/desktop/img/contact-lens/BL-Jun-22/BL_DESKTOP.jpg',
+        image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop',
         badge: 'DOCTOR RECOMMENDED',
         color: 'text-teal-300',
     },
@@ -54,7 +54,7 @@ const HERO_SLIDES = [
         description: 'Level up your style with these trending frames. Stay chic, stay classy.',
         cta: 'Shop Trending',
         bg: 'from-[#0d4a70] via-[#105a8a] to-[#126b9f]',
-        image: '/hero-1.png',
+        image: 'https://images.unsplash.com/photo-1509695507497-903c140c43b0?q=80&w=2073&auto=format&fit=crop',
         badge: 'MUST HAVE',
         color: 'text-blue-200',
     },
@@ -66,7 +66,7 @@ const HERO_SLIDES = [
         description: 'Timeless patterns for a sophisticated everyday look. Ideal for work or play.',
         cta: 'Shop Classic',
         bg: 'from-[#5a3a22] via-[#6d462a] to-[#8a5a33]',
-        image: '/hero-2.png',
+        image: 'https://images.unsplash.com/photo-1600868128362-72cb6aa80fb1?q=80&w=2070&auto=format&fit=crop',
         badge: 'NEW ARRIVALS',
         color: 'text-orange-200',
     },
@@ -99,6 +99,7 @@ const Home = ({ addToCart, toggleWishlist, wishlist }) => {
     const [featured, setFeatured] = useState([]);
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+    const timeoutRef = useRef(null);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -124,7 +125,8 @@ const Home = ({ addToCart, toggleWishlist, wishlist }) => {
     const goToSlide = (index) => {
         setCurrentSlide(index);
         setIsAutoPlaying(false);
-        setTimeout(() => setIsAutoPlaying(true), 8000);
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+        timeoutRef.current = setTimeout(() => setIsAutoPlaying(true), 8000);
     };
 
     const slide = HERO_SLIDES[currentSlide];
@@ -133,8 +135,8 @@ const Home = ({ addToCart, toggleWishlist, wishlist }) => {
         <main className="animate-fade-in">
             {/* ── HERO SECTION ── */}
             <section className={`relative bg-gradient-to-r ${slide.bg} overflow-hidden`} style={{ minHeight: '520px' }}>
-                <div className="lk-container h-full">
-                    <div className="flex flex-col md:flex-row items-center gap-8 py-12 md:py-20 min-h-[520px]">
+                <div className="lk-container h-full overflow-hidden">
+                    <div key={slide.id} className="flex flex-col md:flex-row items-center gap-8 py-12 md:py-20 min-h-[520px] animate-fade-in">
                         {/* Text Content */}
                         <div className="flex-1 text-white z-10 animate-slide-up">
                             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 px-3 py-1.5 rounded-full text-xs font-bold mb-6">
@@ -285,7 +287,7 @@ const Home = ({ addToCart, toggleWishlist, wishlist }) => {
                         {[
                             { bg: 'from-purple-700 to-purple-900', title: '3D Try-On', sub: 'Try glasses virtually from home', emoji: '👓', cta: 'Try Now' },
                             { bg: 'from-teal-600 to-teal-800', title: 'Home Eye Checkup', sub: 'Free eye test at your doorstep', emoji: '🏠', cta: 'Book Free' },
-                            { bg: 'from-orange-500 to-rose-600', title: 'Lenskart Gold', sub: 'Buy 1 Get 1 FREE on top brands', emoji: '⭐', cta: 'Join Now' },
+                            { bg: 'from-orange-500 to-rose-600', title: 'SpectsMart Gold', sub: 'Buy 1 Get 1 FREE on top brands', emoji: '⭐', cta: 'Join Now' },
                         ].map((banner, i) => (
                             <div key={i} className={`bg-gradient-to-br ${banner.bg} text-white rounded-2xl p-6 flex items-center gap-4 cursor-pointer hover:shadow-xl hover:-translate-y-1 transition-all duration-300`}>
                                 <div className="text-4xl">{banner.emoji}</div>
@@ -361,7 +363,7 @@ const Home = ({ addToCart, toggleWishlist, wishlist }) => {
                 </div>
             </section>
 
-            {/* ── LENSKART GOLD MEMBERSHIP ── */}
+            {/* ── SPECTSMART GOLD MEMBERSHIP ── */}
             <section className="py-16">
                 <div className="lk-container">
                     <div className="relative bg-gradient-to-r from-[#000042] via-[#000070] to-[#000042] rounded-3xl overflow-hidden">
@@ -374,7 +376,7 @@ const Home = ({ addToCart, toggleWishlist, wishlist }) => {
                         <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 p-8 md:p-14">
                             <div className="flex-1 text-white">
                                 <div className="inline-flex items-center gap-2 bg-yellow-400 text-black text-xs font-black px-3 py-1 rounded-full mb-6">
-                                    ⭐ LENSKART GOLD
+                                    ⭐ SPECTSMART GOLD
                                 </div>
                                 <h2 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
                                     Premium Perks<br />
@@ -402,7 +404,7 @@ const Home = ({ addToCart, toggleWishlist, wishlist }) => {
                             <div className="flex-1 flex justify-center">
                                 <img
                                     src="https://static.lenskart.com/media/desktop/img/Oct22/gold-membership/gold-desktop.jpg"
-                                    alt="Lenskart Gold"
+                                    alt="SpectsMart Gold"
                                     className="w-full max-w-sm rounded-2xl shadow-2xl"
                                     onError={e => e.target.style.display = 'none'}
                                 />
@@ -422,7 +424,7 @@ const Home = ({ addToCart, toggleWishlist, wishlist }) => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
                             { name: 'Priya S.', city: 'Mumbai', stars: 5, text: '"Amazing quality! Got my eyeglasses in 2 days with free home delivery. The 3D try-on feature is a game-changer!"', avatar: 'P' },
-                            { name: 'Rahul K.', city: 'Delhi', stars: 5, text: '"Lenskart Gold is totally worth it. Got 2 pairs of premium Ray-Bans at the price of 1. Will definitely recommend!"', avatar: 'R' },
+                            { name: 'Rahul K.', city: 'Delhi', stars: 5, text: '"SpectsMart Gold is totally worth it. Got 2 pairs of premium Ray-Bans at the price of 1. Will definitely recommend!"', avatar: 'R' },
                             { name: 'Sneha M.', city: 'Bangalore', stars: 5, text: '"Best eyewear shopping experience in India. Free home eye checkup was so convenient. 5 stars all the way!"', avatar: 'S' },
                         ].map((review, i) => (
                             <div key={i} className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-card transition-shadow">
@@ -445,28 +447,7 @@ const Home = ({ addToCart, toggleWishlist, wishlist }) => {
                 </div>
             </section>
 
-            {/* ── APP DOWNLOAD CTA ── */}
-            <section className="py-12 bg-gradient-to-r from-teal-700 to-teal-600">
-                <div className="lk-container">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-white">
-                        <div className="flex items-center gap-4">
-                            <div className="text-5xl">📱</div>
-                            <div>
-                                <h3 className="text-2xl font-black">Download the Lenskart App</h3>
-                                <p className="text-teal-100 text-sm">Exclusive app-only deals & faster checkout</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4">
-                            {['App Store', 'Google Play'].map(store => (
-                                <button key={store} className="flex items-center gap-2 bg-white text-primary-900 font-bold px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors">
-                                    <Phone size={18} />
-                                    {store}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </main>
     );
 };

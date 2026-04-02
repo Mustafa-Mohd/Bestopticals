@@ -163,8 +163,8 @@
   },
   {
     "id": "EG003",
-    "name": "Lenskart Air LA E16503",
-    "brand": "Lenskart Air",
+    "name": "SpectsMart Air LA E16503",
+    "brand": "SpectsMart Air",
     "category": "eyeglasses",
     "subcategory": "rimless",
     "frameShape": "rectangle",
@@ -178,7 +178,7 @@
       "gunmetal"
     ],
     "images": [
-      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-air-la-e14736-c4-eyeglasses_g_2211_06_2022.jpg"
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//l/e/spectsmart-air-la-e14736-c4-eyeglasses_g_2211_06_2022.jpg"
     ],
     "rating": 4.3,
     "reviews": 2150,
@@ -314,8 +314,8 @@
   },
   {
     "id": "SG003",
-    "name": "Lenskart Hustlr LS S13299",
-    "brand": "Lenskart Hustlr",
+    "name": "SpectsMart Hustlr LS S13299",
+    "brand": "SpectsMart Hustlr",
     "category": "sunglasses",
     "subcategory": "full-rim",
     "frameShape": "sport",
@@ -329,7 +329,7 @@
       "blue"
     ],
     "images": [
-      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-hustlr-ls-s13299-c1-sunglasses_g_4019_01_2023.jpg"
+      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//l/e/spectsmart-hustlr-ls-s13299-c1-sunglasses_g_4019_01_2023.jpg"
     ],
     "rating": 4.1,
     "reviews": 1820,
@@ -479,35 +479,6 @@
       "Color Enhancement",
       "Breathable Material",
       "Comfortable Wear"
-    ]
-  },
-  {
-    "id": "CL004",
-    "name": "Biotrue ONEday",
-    "brand": "Bausch & Lomb",
-    "category": "contact-lenses",
-    "subcategory": "daily",
-    "price": 950,
-    "originalPrice": 1200,
-    "discount": 21,
-    "images": [
-      "https://static1.lenskart.com/media/catalog/product/cache/1/image/628x301/9df78eab33525d08d6e5fb8d27136e95//c/l/cl-contact_lens_11_26_2019.jpg"
-    ],
-    "rating": 4.4,
-    "reviews": 2870,
-    "gender": "unisex",
-    "isPolarized": false,
-    "isBlueLight": false,
-    "isBestSeller": false,
-    "type": "daily",
-    "quantity": "30 lenses",
-    "wearTime": "Daily Disposable",
-    "uvProtection": false,
-    "description": "Inspired by the biology of your eye for exceptional comfort throughout the day.",
-    "features": [
-      "Bio-inspired Material",
-      "98% Water Content",
-      "Retain Moisture"
     ]
   }
 ]

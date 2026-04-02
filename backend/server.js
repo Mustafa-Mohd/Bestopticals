@@ -37,7 +37,7 @@ app.use('/api/banners', bannerRoutes);
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'OK',
-    message: 'Lenskart Clone API is running',
+    message: 'SpectsMart Clone API is running',
     timestamp: new Date().toISOString(),
     version: '1.0.0'
   });
@@ -58,7 +58,7 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`\n🚀 Lenskart Clone Server running at http://localhost:${PORT}`);
+  console.log(`\n🚀 SpectsMart Clone Server running at http://localhost:${PORT}`);
   console.log(`📦 API available at http://localhost:${PORT}/api`);
   console.log(`🌐 Frontend served at http://localhost:${PORT}\n`);
 });

@@ -106,12 +106,20 @@ const ProductDetails = ({ addToCart, toggleWishlist, wishlist }) => {
                                     <span className="bg-primary-900 text-white text-xs font-black px-2.5 py-1 rounded-lg">BESTSELLER</span>
                                 )}
                                 {product.category === 'eyeglasses' && (
-                                    <button
-                                        onClick={() => window.dispatchEvent(new CustomEvent('open-try-on', { detail: product }))}
-                                        className="bg-teal text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg hover:scale-105 transition-transform flex items-center gap-1.5"
-                                    >
-                                        <span className="animate-pulse">✨</span> 3D TRY-ON
-                                    </button>
+                                    <div className="flex flex-col gap-2">
+                                        <button
+                                            onClick={() => window.dispatchEvent(new CustomEvent('open-try-on', { detail: product }))}
+                                            className="bg-teal text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg hover:scale-105 transition-transform flex items-center gap-1.5"
+                                        >
+                                            <span className="animate-pulse">✨</span> 3D TRY-ON
+                                        </button>
+                                        <button
+                                            onClick={() => window.dispatchEvent(new CustomEvent('open-snapchat-filter', { detail: product }))}
+                                            className="bg-yellow-400 text-black text-[10px] font-black px-3 py-1.5 rounded-lg shadow-lg hover:bg-yellow-300 hover:scale-105 transition-transform flex items-center gap-1.5 uppercase"
+                                        >
+                                            <span className="animate-pulse">👁️</span> Live Filter
+                                        </button>
+                                    </div>
                                 )}
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-# Lenskart Clone Tech Stack
+# SpectsMart Clone Tech Stack
 
 This project is built using a modern, scalable, and easy-to-manage tech stack.
 

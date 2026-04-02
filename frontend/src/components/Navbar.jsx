@@ -52,15 +52,9 @@ const Navbar = ({ cartCount, wishlistCount, user, onOpenCart, onOpenAuth, onLogo
                     <div className="flex items-center gap-4 py-3">
                         {/* Logo */}
                         <Link to="/" className="flex items-center gap-2 shrink-0 group">
-                            <div className="w-9 h-9 rounded-full border-2 border-primary-900 flex items-center justify-center group-hover:bg-primary-900 transition-colors duration-200">
-                                <svg viewBox="0 0 100 100" fill="none" className="w-5 h-5 text-primary-900 group-hover:text-white transition-colors duration-200" stroke="currentColor">
-                                    <circle cx="50" cy="50" r="40" strokeWidth="8" />
-                                    <path d="M25 50 H75 M25 50 C25 38 35 32 50 32 C65 32 75 38 75 50" strokeWidth="7" strokeLinecap="round" />
-                                </svg>
-                            </div>
+                            <img src="https://res.cloudinary.com/dhpfphivh/image/upload/v1775127135/ChatGPT_Image_Apr_2__2026__04_18_20_PM-removebg-preview_jrgzgo.png" alt="SpectsMart Logo" className="h-20 object-contain" />
                             <div>
-                                <span className="text-xl font-black text-primary-900 tracking-tight">BEST VISION</span>
-                                <div className="text-[8px] font-bold text-teal tracking-widest uppercase -mt-1">Opticals</div>
+                                <span className="text-3xl font-black text-primary-900 tracking-tight">SPECTSMART</span>
                             </div>
                         </Link>
 

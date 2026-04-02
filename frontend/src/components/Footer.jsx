@@ -4,9 +4,9 @@ import { Phone, Mail, MapPin, Instagram, Twitter, Facebook, Youtube, ArrowRight 
 const Footer = () => {
     const links = {
         'Shop': ['Eyeglasses', 'Sunglasses', 'Contact Lenses', 'Reading Glasses', 'Computer Glasses', 'Kids Eyewear'],
-        'Services': ['Store Locator', 'Home Eye Checkup', 'Frame Size Guide', '3D Try-On', 'Lenskart Gold', 'Buying Guide'],
+        'Services': ['Store Locator', 'Home Eye Checkup', 'Frame Size Guide', '3D Try-On', 'SpectsMart Gold', 'Buying Guide'],
         'Support': ['Customer Support', 'Order Tracking', 'Returns & Refunds', 'FAQ', 'Warranty', 'Contact Us'],
-        'Company': ['Our Story', 'Careers', 'Press', 'Investors', 'Lenskart Blog', 'Privacy Policy'],
+        'Company': ['Our Story', 'Careers', 'Press', 'Investors', 'SpectsMart Blog', 'Privacy Policy'],
     };
 
     return (
@@ -42,20 +42,14 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="col-span-2">
                         <div className="flex items-center gap-2 mb-4">
-                            <div className="w-9 h-9 rounded-full border-2 border-white/30 flex items-center justify-center">
-                                <svg viewBox="0 0 100 100" fill="none" className="w-5 h-5" stroke="white">
-                                    <circle cx="50" cy="50" r="40" strokeWidth="8" />
-                                    <path d="M25 50 H75 M25 50 C25 38 35 32 50 32 C65 32 75 38 75 50" strokeWidth="7" strokeLinecap="round" />
-                                </svg>
-                            </div>
+                            <img src="https://res.cloudinary.com/dhpfphivh/image/upload/v1775127135/ChatGPT_Image_Apr_2__2026__04_18_20_PM-removebg-preview_jrgzgo.png" alt="SpectsMart Logo" className="h-16 object-contain" />
                             <div>
-                                <div className="font-black text-xl tracking-tight">BEST VISION</div>
-                                <div className="text-[8px] text-teal font-bold tracking-widest uppercase -mt-1">Opticals</div>
+                                <div className="font-black text-2xl tracking-tight">SPECTSMART</div>
                             </div>
                         </div>
 
                         <p className="text-white/50 text-sm leading-relaxed mb-6">
-                            Best Vision Opticals. Providing premium eyeglasses, sunglasses & contact lenses with the promise of quality and style.
+                            SpectsMart. Providing premium eyeglasses, sunglasses & contact lenses with the promise of quality and style.
                         </p>
 
                         {/* Contact Info */}
@@ -66,7 +60,7 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center gap-2.5 text-sm text-white/60">
                                 <Mail size={14} className="text-teal shrink-0" />
-                                <span>support@lenskart.com</span>
+                                <span>support@spectsmart.com</span>
                             </div>
                             <div className="flex items-center gap-2.5 text-sm text-white/60">
                                 <MapPin size={14} className="text-teal shrink-0" />
@@ -116,7 +110,7 @@ const Footer = () => {
             {/* Bottom Bar */}
             <div className="border-t border-white/10">
                 <div className="lk-container py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-white/40 text-xs">
-                    <span>© 2025 Best Vision Opticals. All rights reserved.</span>
+                    <span>© 2025 SpectsMart. All rights reserved.</span>
                     <div className="flex items-center gap-4">
                         <span>Made with ❤️ in India</span>
                         <span>·</span>

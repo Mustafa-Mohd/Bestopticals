@@ -5,6 +5,20 @@ const ProductCard = ({ product, addToCart, toggleWishlist, isWishlisted }) => {
     const originalPrice = Math.round(product.price * 1.4);
     const discountPct = product.discount || 40;
 
+    let imageSrc = product.image;
+    if (product.images) {
+        if (Array.isArray(product.images) && product.images.length > 0) {
+            imageSrc = product.images[0];
+        } else if (typeof product.images === 'string') {
+            try {
+                const parsed = JSON.parse(product.images);
+                imageSrc = Array.isArray(parsed) && parsed.length > 0 ? parsed[0] : product.images;
+            } catch (e) {
+                imageSrc = product.images;
+            }
+        }
+    }
+
     const renderStars = (rating) => {
         return [...Array(5)].map((_, i) => {
             const filled = i + 1 <= Math.floor(rating);
@@ -24,9 +38,9 @@ const ProductCard = ({ product, addToCart, toggleWishlist, isWishlisted }) => {
         <div className="product-card group">
             {/* Image area */}
             <div className="relative bg-gray-50 overflow-hidden" style={{ aspectRatio: '4/3' }}>
-                <Link to={`/product/${product.id}`} className="flex items-center justify-center h-full p-4">
+                <Link to={`/product/${product.id}`} className="flex items-center justify-center h-full p-2">
                     <img
-                        src={Array.isArray(product.images) ? product.images[0] : (product.images || product.image)}
+                        src={imageSrc}
                         alt={product.name}
                         className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                         onError={(e) => {
@@ -42,12 +56,22 @@ const ProductCard = ({ product, addToCart, toggleWishlist, isWishlisted }) => {
                             Bestseller
                         </span>
                     )}
-                    <button
-                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.dispatchEvent(new CustomEvent('open-try-on', { detail: product })); }}
-                        className="bg-teal/90 hover:bg-teal backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-md shadow flex items-center gap-1.5 transition-all hover:scale-105"
-                    >
-                        <span className="animate-pulse">✨</span> 3D Try-On
-                    </button>
+                    <div className="flex bg-white/90 rounded-full shadow backdrop-blur-sm overflow-hidden transition-all hover:scale-105">
+                        <button
+                            title="3D Image Try-On"
+                            onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.dispatchEvent(new CustomEvent('open-try-on', { detail: product })); }}
+                            className="hover:bg-teal hover:text-white text-teal text-[14px] font-bold w-8 h-8 flex items-center justify-center transition-all bg-white/50"
+                        >
+                            ✨
+                        </button>
+                        <button
+                            title="Live Snapchat Filter Try-On"
+                            onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.dispatchEvent(new CustomEvent('open-snapchat-filter', { detail: product })); }}
+                            className="bg-yellow-400 hover:bg-yellow-300 text-black text-[10px] font-black px-3 flex items-center justify-center transition-all animate-pulse"
+                        >
+                            Snapchat Filter
+                        </button>
+                    </div>
                 </div>
 
                 {/* Discount badge */}

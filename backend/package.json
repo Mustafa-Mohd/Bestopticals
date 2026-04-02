@@ -1,7 +1,7 @@
 {
-  "name": "lenskart-clone-backend",
+  "name": "spectsmart-clone-backend",
   "version": "1.0.0",
-  "description": "Lenskart Clone Backend API",
+  "description": "SpectsMart Clone Backend API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

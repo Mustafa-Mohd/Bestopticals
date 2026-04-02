@@ -203,7 +203,7 @@ const VirtualTryOn = ({ product, onClose }) => {
     return (
         <div className="fixed inset-0 z-[100] bg-[#000015]/98 text-primary-900 flex items-center justify-center p-0 md:p-10 backdrop-blur-3xl animate-fade-in">
             <div className="bg-white rounded-none md:rounded-[3rem] w-full max-w-6xl h-full md:h-[90vh] overflow-hidden flex flex-col shadow-[0_40px_100px_rgba(0,0,0,0.5)]">
-                {/* Lenskart-style Header */}
+                {/* SpectsMart-style Header */}
                 <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-white/50 backdrop-blur-xl">
                     <div className="flex items-center gap-4">
                         <div className="w-12 h-12 bg-primary-900 text-white rounded-2xl flex items-center justify-center font-black italic shadow-lg shadow-primary-900/20">LK</div>
