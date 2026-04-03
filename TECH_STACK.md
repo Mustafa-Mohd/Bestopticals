@@ -1,41 +1,31 @@
-# SpectsMart Clone Tech Stack
+# Updated Project Tech Stack
 
-This project is built using a modern, scalable, and easy-to-manage tech stack.
+This document outlines the modernized technology stack for the SpectsMart / Best Vision Opticals platform.
 
-## 🎨 Frontend (Client Side)
+## 🎨 Frontend (Premium Experience)
 - **Framework**: React.js (v18+)
-- **Build Tool**: Vite (for lightning-fast development)
-- **Routing**: React Router DOM v6
-- **Icons**: Lucide React & FontAwesome 6
-- **Styling**: CSS3 (Modular Vanilla CSS)
+- **Build System**: Vite
+- **Styling**: Modular Vanilla CSS (Modern CSS Transitions, Glassmorphism, Responsive Grid/Flexbox)
+- **AR Library**: MediaPipe Face Mesh (Real-time virtual try-on)
+- **Interactivity**: Snapchat-style filter processing for realistic eyewear overlays.
 
-## ⚙️ Backend (Server Side)
-- **Environment**: Node.js
-- **Framework**: Express.js
-- **Features**:
-  - RESTful API design.
-  - CRUD operations for dynamic product management.
-  - **Middleware**: 
-    - `cors` for cross-origin access.
-    - `multer` for high-performance file/image uploads.
-    - `express.static` for serving frontend and user-uploaded media.
+## ⚙️ Backend (Cloud-Native)
+- **Platform**: **Supabase**
+- **Infrastructure**: Edge Functions (for server-side logic like WhatsApp API triggers)
+- **Security**: Supabase Auth (Integrated JWT-based authentication)
 
 ## 💾 Database & Storage
-- **Type**: Persistent File-based Database (JSON).
-- **Storage**: `backend/data/products.json`.
-- **Media Storage**: Local `backend/uploads` directory for product images.
-- **Data Persistence**: Uses `fs` (File System) module to ensure all changes made via the Admin Panel are saved permanently.
+- **Primary Database**: **PostgreSQL** (Managed by Supabase)
+- **Architecture**: Relational schema for Products, Orders, Users, and Audit Logs.
+- **Media Storage**: Supabase Storage Buckets (Global CDN enabled for high-speed image loading).
 
-## 🛠️ Admin CMS (Content Management System)
-- **User-Friendly**: Designed for "non-IT" data entry users.
-- **Drag & Drop**: Advanced drag-and-drop image upload zone.
-- **Features**:
-  - Dashboard with key statistics (Total Products, Stock status).
-  - Detailed product forms (Price, Category, Brand, Stock, Gender, etc.).
-  - Instant updates to the live frontend.
+## 🏢 Administrative CMS
+- **Product Management**: Multi-category CMS (Anyone authorized can add/edit products).
+- **User Insights**: Admin view for user login information and account management.
+- **WhatsApp Integration**: Integrated communication system using WhatsApp Business API / Web Links.
+- **Audit Logs**: Comprehensive system to track every change made in the admin panel.
 
-## 🚀 Deployment / Running
-- **Server**: `npm start` or `npm run dev` (via Nodemon).
-- **Access**: 
-  - Storefront: `http://localhost:5000`
-  - Admin Panel: `http://localhost:5000/admin.html`
+## 🛡️ Security & Performance
+- **Data Integrity**: Enforced via PostgreSQL foreign keys and constraints.
+- **Authentication**: Secure Login/Signup with persistent sessions. 
+- **Optimized Assets**: Lazy loading and optimized image formats (WebP) for premium performance.

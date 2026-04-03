@@ -186,7 +186,13 @@ const Navbar = ({ cartCount, wishlistCount, user, onOpenCart, onOpenAuth, onLogo
                                     {cat.label}
                                 </Link>
                             ))}
-                            <div className="ml-auto shrink-0">
+                            <div className="ml-auto shrink-0 flex items-center gap-2">
+                                <Link
+                                    to="/about"
+                                    className="px-4 py-1.5 text-sm font-bold text-gray-600 hover:text-teal transition-colors whitespace-nowrap"
+                                >
+                                    About Us
+                                </Link>
                                 <Link
                                     to="/admin"
                                     className="px-4 py-1.5 text-sm font-bold text-yellow-600 hover:text-yellow-700 transition-colors whitespace-nowrap"

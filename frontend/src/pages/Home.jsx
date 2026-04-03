@@ -78,6 +78,7 @@ const CATEGORIES = [
     { icon: <BookOpen size={28} />, label: 'Reading Glass', href: '/products?category=reading-glasses', color: 'bg-purple-50 text-purple-600', border: 'border-purple-200' },
     { icon: <Monitor size={28} />, label: 'Computer Glass', href: '/products?category=computer-glasses', color: 'bg-green-50 text-green-700', border: 'border-green-200' },
     { icon: <Glasses size={28} />, label: 'Kids Eyewear', href: '/products?category=kids', color: 'bg-pink-50 text-pink-600', border: 'border-pink-200' },
+    { icon: <TrendingUp size={28} />, label: '3D Experience', href: '/products?category=sunglasses&search=3D', color: 'bg-cyan-50 text-cyan-700', border: 'border-cyan-200' },
     { icon: <Eye size={28} />, label: 'Contact Lenses', href: '/products?category=contact-lenses', color: 'bg-teal-50 text-teal-700', border: 'border-teal-200' },
 ];
 

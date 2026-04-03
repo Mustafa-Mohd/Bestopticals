@@ -12,6 +12,7 @@ import AuthModal from './components/AuthModal';
 import Toast from './components/Toast';
 import VirtualTryOn from './components/VirtualTryOn';
 import SnapchatFilterTryOn from './components/SnapchatFilterTryOn';
+import About from './pages/About';
 
 function App() {
     const [cart, setCart] = useState(JSON.parse(localStorage.getItem('lk_cart')) || []);
@@ -107,6 +108,7 @@ function App() {
                     <Route path="/products" element={<Products toggleWishlist={toggleWishlist} wishlist={wishlist} addToCart={addToCart} />} />
                     <Route path="/product/:id" element={<ProductDetails addToCart={addToCart} toggleWishlist={toggleWishlist} wishlist={wishlist} />} />
                     <Route path="/wishlist" element={<Wishlist addToCart={addToCart} toggleWishlist={toggleWishlist} wishlist={wishlist} />} />
+                    <Route path="/about" element={<About />} />
                     <Route path="/admin" element={<Admin />} />
                 </Routes>
             </div>

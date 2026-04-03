@@ -214,12 +214,9 @@ const SnapchatFilterTryOn = ({ product, onClose }) => {
                     style={{
                         display: 'none',
                         transformOrigin: 'center center',
-                        mixBlendMode: 'multiply',
-                        WebkitMaskImage: 'linear-gradient(to right, transparent 5%, black 15%, black 85%, transparent 95%)',
-                        maskImage: 'linear-gradient(to right, transparent 5%, black 15%, black 85%, transparent 95%)',
                         // High performance GPU rendering
                         willChange: 'transform, left, top',
-                        filter: 'drop-shadow(0 15px 15px rgba(0,0,0,0.5))'
+                        filter: 'drop-shadow(0 15px 15px rgba(0,0,0,0.5)) saturate(1.2)'
                     }}
                 />
             </div>
@@ -231,6 +228,9 @@ const SnapchatFilterTryOn = ({ product, onClose }) => {
                         <img src={originalSpecsUrl} className="w-full h-auto object-contain" alt="Selected" />
                     </div>
                     <div className="flex-1">
+                        {product.subcategory === '3d-glasses' && (
+                            <div className="text-[10px] font-black tracking-widest text-cyan-400 uppercase mb-1">3D EXPERIENCE ENABLED</div>
+                        )}
                         <div className="text-[10px] font-black tracking-widest text-yellow-400 uppercase">Currently Wearing</div>
                         <div className="font-bold text-sm leading-tight text-white line-clamp-1">{product.name}</div>
                         <div className="font-black text-sm text-white/90">₹{product.price?.toLocaleString()}</div>

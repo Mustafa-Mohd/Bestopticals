@@ -480,5 +480,40 @@
       "Breathable Material",
       "Comfortable Wear"
     ]
+  },
+  {
+    "id": "SG-3D-001",
+    "name": "Custom Premium 3D Glasses",
+    "brand": "SpectsMart Custom",
+    "category": "sunglasses",
+    "subcategory": "3d-glasses",
+    "frameShape": "rectangle",
+    "frameMaterial": "plastic",
+    "price": 499,
+    "originalPrice": 999,
+    "discount": 50,
+    "colors": [
+      "red-blue"
+    ],
+    "images": [
+      "https://res.cloudinary.com/ddm8zptlv/image/upload/v1775141231/image-removebg-preview_weqxli.png"
+    ],
+    "rating": 5.0,
+    "reviews": 32,
+    "gender": "unisex",
+    "isPolarized": false,
+    "isBlueLight": false,
+    "isBestSeller": true,
+    "lensOptions": [
+      "3D Stereoscopic"
+    ],
+    "weight": "Light",
+    "warranty": "6 Months",
+    "description": "Experience theater-quality 3D at home with these premium stereoscopic glasses. Optimized red and cyan filters provide a deep, immersive experience.",
+    "features": [
+      "3D Try-On Enabled",
+      "Cinema Grade Filters",
+      "Lightweight Durable Frame"
+    ]
   }
 ]

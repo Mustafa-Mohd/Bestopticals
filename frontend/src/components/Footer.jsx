@@ -3,10 +3,10 @@ import { Phone, Mail, MapPin, Instagram, Twitter, Facebook, Youtube, ArrowRight 
 
 const Footer = () => {
     const links = {
-        'Shop': ['Eyeglasses', 'Sunglasses', 'Contact Lenses', 'Reading Glasses', 'Computer Glasses', 'Kids Eyewear'],
-        'Services': ['Store Locator', 'Home Eye Checkup', 'Frame Size Guide', '3D Try-On', 'SpectsMart Gold', 'Buying Guide'],
-        'Support': ['Customer Support', 'Order Tracking', 'Returns & Refunds', 'FAQ', 'Warranty', 'Contact Us'],
-        'Company': ['Our Story', 'Careers', 'Press', 'Investors', 'SpectsMart Blog', 'Privacy Policy'],
+        'Shop': [{label: 'Eyeglasses', to: '/products?category=eyeglasses'}, {label: 'Sunglasses', to: '/products?category=sunglasses'}, {label: 'Contact Lenses', to: '/products?category=contact-lenses'}, {label: 'Reading Glasses', to: '/products?category=reading-glasses'}, {label: 'Computer Glasses', to: '/products?category=computer-glasses'}, {label: 'Kids Eyewear', to: '/products?category=kids'}],
+        'Services': [{label: 'Store Locator', to: '/'}, {label: 'Home Eye Checkup', to: '/'}, {label: 'Frame Size Guide', to: '/'}, {label: '3D Try-On', to: '/products'}, {label: 'SpectsMart Gold', to: '/'}, {label: 'Buying Guide', to: '/'}],
+        'Support': [{label: 'Customer Support', to: '/about'}, {label: 'Order Tracking', to: '/'}, {label: 'Returns & Refunds', to: '/'}, {label: 'FAQ', to: '/'}, {label: 'Warranty', to: '/'}, {label: 'Contact Us', to: '/about'}],
+        'Company': [{label: 'About Us', to: '/about'}, {label: 'Careers', to: '/'}, {label: 'Press', to: '/'}, {label: 'Investors', to: '/'}, {label: 'SpectsMart Blog', to: '/'}, {label: 'Privacy Policy', to: '/'}],
     };
 
     return (
@@ -92,12 +92,12 @@ const Footer = () => {
                             <h4 className="font-black text-sm uppercase tracking-wider mb-4 text-white">{title}</h4>
                             <ul className="space-y-2.5">
                                 {items.map(item => (
-                                    <li key={item}>
+                                    <li key={item.label}>
                                         <Link
-                                            to="/products"
+                                            to={item.to}
                                             className="text-white/50 text-sm hover:text-teal transition-colors duration-200"
                                         >
-                                            {item}
+                                            {item.label}
                                         </Link>
                                     </li>
                                 ))}
